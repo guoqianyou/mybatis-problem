@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: haozhu
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+    default-property-inclusion: non_null
+
+  servlet:
+    multipart:
+      max-request-size: 20MB
+      max-file-size: 10MB
+
+mybatis-plus:
+  mapper-locations: classpath*:com/test/**/mapper/**/*.xml
+server:
+  port: 8090
